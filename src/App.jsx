@@ -7,6 +7,9 @@ import USERS from "../src/assets/data.json";
 function App() {
     const [isMobile, setIsMobile] = useState(false);
     const [activeUserIdx, setActiveUserIdx] = useState(null);
+    
+
+    useEffect(() => {}, [activeUserIdx]);
 
     useEffect(() => {
         const checkDeviceWidth = () => {
