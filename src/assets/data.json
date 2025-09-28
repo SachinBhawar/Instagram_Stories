@@ -1,0 +1,84 @@
+[
+    {
+        "userId": 1,
+        "username": "john_doe",
+        "userImage": "https://randomuser.me/api/portraits/men/32.jpg",
+        "stories": [
+            "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    {
+        "userId": 2,
+        "username": "jane_smith",
+        "userImage": "https://randomuser.me/api/portraits/women/44.jpg",
+        "stories": [
+            "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    {
+        "userId": 3,
+        "username": "mike_ross",
+        "userImage": "https://randomuser.me/api/portraits/men/45.jpg",
+        "stories": [
+            "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    {
+        "userId": 4,
+        "username": "emma_watson",
+        "userImage": "https://randomuser.me/api/portraits/women/65.jpg",
+        "stories": [
+            "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    {
+        "userId": 5,
+        "username": "lucas_gray",
+        "userImage": "https://randomuser.me/api/portraits/men/66.jpg",
+        "stories": [
+            "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    {
+        "userId": 6,
+        "username": "olivia_brown",
+        "userImage": "https://randomuser.me/api/portraits/women/67.jpg",
+        "stories": [
+            "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    {
+        "userId": 7,
+        "username": "liam_jones",
+        "userImage": "https://randomuser.me/api/portraits/men/68.jpg",
+        "stories": [
+            "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    {
+        "userId": 8,
+        "username": "sophia_martin",
+        "userImage": "https://randomuser.me/api/portraits/women/69.jpg",
+        "stories": [
+            "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    {
+        "userId": 9,
+        "username": "noah_clark",
+        "userImage": "https://randomuser.me/api/portraits/men/70.jpg",
+        "stories": [
+            "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+        ]
+    },
+    {
+        "userId": 10,
+        "username": "mia_lewis",
+        "userImage": "https://randomuser.me/api/portraits/women/71.jpg",
+        "stories": [
+            "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80"
+        ]
+    }
+]
