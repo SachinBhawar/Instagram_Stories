@@ -1,4 +1,3 @@
-import { User } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 
 const STORY_DURATION = 5; // this is given in problem statement
