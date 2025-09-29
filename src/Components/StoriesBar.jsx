@@ -1,5 +1,3 @@
-import { useRef } from "react";
-
 function StoriesBar({ users, activeUserIdx, onUserClick, seenUserRef }) {
     return (
         <div className="flex overflow-x-auto touch-auto py-4 bg-black/85 absolute top-0 left-0 w-screen z-30 gap-[18px] border-b border-white/10 no-scrollbar">
@@ -18,7 +16,7 @@ function StoriesBar({ users, activeUserIdx, onUserClick, seenUserRef }) {
                         <div
                             className={`
               absolute top-0 left-0 w-[54px] h-[54px] rounded-full z-[1] transition-shadow
-              ${seenUserRef.current?.includes(user.userId) ? "bg-gray-400" : "bg-orange-400"}
+              ${seenUserRef.current?.includes(user.userId) ? "bg-gray-700" : "bg-orange-400"}
              
               ${
                   idx === activeUserIdx
