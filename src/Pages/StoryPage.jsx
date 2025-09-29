@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 
 const STORY_DURATION = 5; // this is given in problem statement
 
-const StoryPage = ({ users, initialUserIdx = 0, onClose }) => {
+const StoryPage = ({ users, initialUserIdx = 0, onClose, seenUserRef }) => {
     const [userIdx, setUserIdx] = useState(initialUserIdx);
     const [storyIdx, setStoryIdx] = useState(0);
     const [progress, setProgress] = useState(0);
@@ -13,6 +13,16 @@ const StoryPage = ({ users, initialUserIdx = 0, onClose }) => {
     const currentStoryImage = currentStories[storyIdx];
 
     useEffect(() => {
+        const addToSeenUsers = (userId) => {
+            if (seenUserRef.current) {
+                if (!seenUserRef.current.includes(userId)) {
+                    seenUserRef.current.push(userId);
+                }
+            } else {
+                seenUserRef.current = [];
+                seenUserRef.current.push(userId);
+            }
+        };
         setProgress(0);
         if (intervalRef.current) clearInterval(intervalRef.current);
 
@@ -26,9 +36,11 @@ const StoryPage = ({ users, initialUserIdx = 0, onClose }) => {
                     } else if (userIdx < users.length - 1) {
                         setUserIdx((u) => u + 1);
                         setStoryIdx(0);
+                        addToSeenUsers(users[userIdx].userId);
                         return 0;
                     } else if (onClose) {
                         onClose();
+                        addToSeenUsers(users[userIdx].userId);
                         return 100;
                     }
                     return 100;

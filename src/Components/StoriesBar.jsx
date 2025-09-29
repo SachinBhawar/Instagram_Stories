@@ -1,8 +1,6 @@
 import { useRef } from "react";
 
-function StoriesBar({ users, activeUserIdx, onUserClick }) {
-    const seenUsersRef = useRef(new Set());
-
+function StoriesBar({ users, activeUserIdx, onUserClick, seenUserRef }) {
     return (
         <div className="flex overflow-x-auto touch-auto py-4 bg-black/85 absolute top-0 left-0 w-screen z-30 gap-[18px] border-b border-white/10 no-scrollbar">
             {users.map((user, idx) => (
@@ -10,8 +8,6 @@ function StoriesBar({ users, activeUserIdx, onUserClick }) {
                     key={user.userId}
                     onClick={() => {
                         onUserClick(idx);
-                        seenUsersRef.current.add(user.userId);
-                        console.log("clicked..");
                     }}
                     className={`flex flex-col items-center cursor-pointer pb-0.5 min-w-[60px] no-scrollbar ${
                         idx === activeUserIdx ? "border-b-2 border-white" : "border-b-2 border-transparent"
@@ -22,7 +18,7 @@ function StoriesBar({ users, activeUserIdx, onUserClick }) {
                         <div
                             className={`
               absolute top-0 left-0 w-[54px] h-[54px] rounded-full z-[1] transition-shadow
-              ${seenUsersRef.current.has(user.userId) ? "bg-gray-400" : "bg-orange-400"}
+              ${seenUserRef.current?.includes(user.userId) ? "bg-gray-400" : "bg-orange-400"}
              
               ${
                   idx === activeUserIdx
